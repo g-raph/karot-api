@@ -5,7 +5,9 @@ module.exports = {
             path: '/projects/:slug',
             handler: 'project.findOne',
             config: {
-                auth: false
+                find: {
+                    auth: false
+                }
             }
         }
     ]

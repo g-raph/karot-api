@@ -34,7 +34,7 @@
     },
     "image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -47,12 +47,6 @@
           "localized": false
         }
       }
-    },
-    "divisions": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::division.division",
-      "mappedBy": "projects"
     },
     "slug": {
       "pluginOptions": {
